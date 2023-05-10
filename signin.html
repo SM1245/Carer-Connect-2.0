@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ajusts the page to the Dimensions of the device that is being used to view it-->
+    <link rel="stylesheet" href="background_style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <title>CARER CONNECT</title> 
+</head>
+<body>
+    <nav class="navigationbar">           <!--Adding navigation bar-->
+        <img src="logo.png">
+        <div class="Company-name"> CARER CONNECT</div>
+        <p style="text-align: left;"></p>
+        <div class ="navbar-links">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <input type="radio" style="width:50px; height:50px;" name="log" id="isf" onclick="javascript:signin()" checked> Individuals
+       <!--using the check attribute to ensure that a radio button is selected by default-->
+    <input type="radio" style="width:50px; height:50px;" name="log" id="csf" onclick="javascript:signin()"> Carer
+    <br>
+    <br>
+    <script>
+        function signin()
+        {
+            var signin=document.getElementById("isf");
+            if(signin.checked)
+            {
+                document.getElementById("indlog").style.display="block";
+		document.getElementById("carelog").style.display="none";
+            }
+            else
+            {
+		document.getElementById("indlog").style.display="none";
+                document.getElementById("carelog").style.display="block";
+            }
+        }
+    </script>
+    <br>
+    <form id="indlog" style="display:block"> <!--individual sign in-->
+        Username: <input type="text" username="username">
+        <br> 
+        <br>
+        Password: <input type="password" password="password" maxlength="8"> 
+        <br>
+        <br>
+        <input type="checkbox" style="width:50px; height:50px;" name="Remember me" id="rememberme" onclick="setcookie()">Remember me
+        <style>
+            input[type="text"]{
+                width:100%;
+                border: 5px solid #aaa;
+                border-radius:10px;
+                margin:10px 0;
+                outline: none;
+                padding:10px;
+                box-sizing:border-box;
+            }
+            input[type=text]:focus{
+                border-color: dodgerblue;
+                box-shadow: 0 0 10px 0 dodgerblue;
+            }
+            input[type="password"]{
+                width:100%;
+                border: 5px solid #aaa;
+                border-radius:10px;
+                margin:10px 0;
+                outline: none;
+                padding:10px;
+                box-sizing:border-box;
+            }
+            input[type=password]:focus{
+                border-color: dodgerblue;
+                box-shadow: 0 0 10px 0 dodgerblue;
+            }
+        </style> 
+        <button class="Login">Login</button>
+        <br>
+        <br> <center>
+        <a href="registration.html">Don't have an account yet? Register!</a><!--Redirecting to registration page-->
+        </center>
+    </form>
+    <form id="carelog" style="display:none"> <!--carer sign in-->
+	Carer Number: <input type="text" carenum="carenum">
+	<br>
+	<br>
+        Username: <input type="text" username="username">
+        <br> 
+        <br>
+        Password: <input type="password" password="password" maxlength="8"> 
+        <br>
+        <br>
+        <input type="checkbox" style="width:50px; height:50px;" name="Remember me" id="rememberme" onclick="setcookie()">Remember me
+        <style>
+            input[type="carenum"]{
+                width:100%;
+                border: 5px solid #aaa;
+                border-radius:10px;
+                margin:10px 0;
+                outline: none;
+                padding:10px;
+                box-sizing:border-box;
+            }
+            input[type=carenum]:focus{
+                border-color: dodgerblue;
+                box-shadow: 0 0 10px 0 dodgerblue;
+            }
+            input[type="text"]{
+                width:100%;
+                border: 5px solid #aaa;
+                border-radius:10px;
+                margin:10px 0;
+                outline: none;
+                padding:10px;
+                box-sizing:border-box;
+            }
+            input[type=text]:focus{
+                border-color: dodgerblue;
+                box-shadow: 0 0 10px 0 dodgerblue;
+            }
+            input[type="password"]{
+        	width:100%;
+        	border: 5px solid #aaa;
+        	border-radius:10px;
+        	margin:10px 0;
+        	outline: none;
+        	padding:10px;
+        	box-sizing:border-box;
+    	    }
+    	    input[type=password]:focus{
+        	border-color: dodgerblue;
+        	box-shadow: 0 0 10px 0 dodgerblue;
+    	    }
+        </style> 
+        <button class="Login">Login</button>
+        <br>
+        <br> <center>
+        <a href="registration.html">Don't have an account yet? Register!</a><!--Redirecting to registration page-->
+        </center>
+     </form>
+     <!--Script used to get cookie to remember user's details and to store them-->
+     <script type ="text/javascript">              
+        function setcookie(){                                       
+            var u =document.getElementById('username').value;
+            var p=document.getElementById('password').value;
+            document.cookie="myusername="+u+";path=file:///C:/Users/mr_wo/Desktop/Website/signin.html";
+        }
+     </script>
+</body>   
+</html>

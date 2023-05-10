@@ -1,0 +1,78 @@
+form1 {
+    font-size: 40px;
+    font-family:Garamond,serif;
+}
+.Login{
+    border-radius: 50px;
+    border:0px;
+    font-size: 1.5rem;
+    padding: 1.5rem 5rem;
+    background:gray;
+    color:black;
+}
+.Login:hover{
+    background: dodgerblue;
+    color:white;
+}
+.Login{
+    position: absolute;
+    left:68%;
+    right:5%;
+}
+[type="checkbox"]
+{
+    vertical-align:middle;
+}
+[type="text"]
+{
+    vertical-align:middle;
+}
+.Submit{
+    border-radius: 30px;
+    border:0px;
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    background:gray;
+    color:black;
+}
+.Submit:hover{
+    background: dodgerblue;
+    color:white;
+}
+.Submit{
+    position: absolute;
+    left: 42.5%;
+    bottom:10%;
+}
+[type="radio"]
+{
+    vertical-align:middle;
+}
+[type="text"]
+{
+    vertical-align:middle;
+}
+.submit_btn{
+    border-radius: 40px;
+    border:0px;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    background:gray;
+    color:black;
+}
+.submit_btn:hover{
+    background: dodgerblue;
+    color:white;
+}
+.clear_btn{
+    border-radius: 40px;
+    border:0px;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    background:gray;
+    color:black;
+}
+.clear_btn:hover{
+    background: dodgerblue;
+    color:white;
+}

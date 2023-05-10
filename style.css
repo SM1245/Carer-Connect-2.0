@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0rem;
+    padding:0rem;
+}
+
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    background-color:#ffffff;
+    color:black
+}
+.Company-name {
+    font-size: 2.5rem;
+    margin: 1rem;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+
+.navbar-links ul {
+    margin:.5rem;
+    padding:1rem;
+    display: flex;
+}
+
+
+.navbar-links li {
+    list-style: none;
+}
+
+
+.navbar-links li a {
+    text-decoration:#0000;
+    color:black;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    background: dodgerblue;
+    color:white;
+}
+p2 {
+    font-size: 100px;
+    font-family: monospace;
+}
+p3 {
+    font-size: 100px;
+    font-family: monospace;
+}
+p4 {
+    font-size: 100px;
+    font-family: monospace;
+}
+p5 {
+    font-size: 100px;
+    font-family: monospace;
+}
+p6 {
+    font-size: 100px;
+    font-family: monospace;
+}
+iframe {
+    position: absolute;
+    left:55%;
+    right:30%;
+    top:30%;
+    bottom:25%;
+}
+p8 {
+    font-size: 22px;
+    font-family:sans-serif;
+}
+p9 {
+    font-size: 35px;
+    font-family:sans-serif;
+}
+p10 {
+    font-size: 35px;
+    font-family:sans-serif;
+}
+p11 {
+    font-size: 35px;
+    font-family:sans-serif;
+}
+p12 {
+    font-size: 22px;
+    font-family:sans-serif;
+}
+form5 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+img2{
+        position: absolute;
+        left:55%;
+        right:30%;
+        top:30%;
+        bottom:25%;
+    }
